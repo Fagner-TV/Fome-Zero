@@ -11,7 +11,25 @@ import folium
 from streamlit_folium import folium_static
 import numpy as np
 from folium.plugins import MarkerCluster
+hide_elements = """
+<style>
+    /* Remove menu superior, icones e animações */
+    header {visibility: hidden;}
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
 
+    /* Remove barra com o correr/editar (lápis) */
+    div[data-testid="stToolbar"] {
+        display: none !important;
+    }
+
+    /* Remove ícone do gato / Streamlit menu */
+    div[data-testid="stDecoration"] {
+        display: none !important;
+    }
+</style>
+"""
+st.markdown(hide_elements, unsafe_allow_html=True)
 #Importando dados e tratando
 
 df = pd.read_csv('Ciclo/zomato.csv')
@@ -142,5 +160,6 @@ with st.container():
             popup=popup_text
         ).add_to(marker_cluster)
     folium_static(mapa, width=1024, height=600)
+
 
 
