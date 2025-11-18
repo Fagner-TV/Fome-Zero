@@ -136,7 +136,7 @@ with st.container():
      col3.metric(label ='Cidades Cadastradas',value = cidades)  
   with col4:
     avaliacao = df1['Votes'].sum()  
-    col4.metric(label='Avaliações feitas na Plataforma',value=f"{avaliacao:,}")
+    col4.metric(label='Avaliações feitas na Plataforma',value=f"{avaliacao}".replace(".","."))
   with col5:
      culinaria = len(df1['Cuisines'].unique()) 
      col5.metric(label = 'Tipos de culinárias oferecidas' ,value = culinaria) 
@@ -160,6 +160,7 @@ with st.container():
             popup=popup_text
         ).add_to(marker_cluster)
     folium_static(mapa, width=1024, height=600)
+
 
 
 
