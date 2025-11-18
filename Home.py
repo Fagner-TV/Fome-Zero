@@ -14,7 +14,7 @@ from folium.plugins import MarkerCluster
 
 #Importando dados e tratando
 
-df = pd.read_csv('Ciclo/zomato.csv')
+df = pd.read_csv('zomato.csv')
 df1=df.copy()
 df1 = df1.dropna(subset=["Cuisines"])
 st.set_page_config(page_title = 'Main Page')
@@ -142,3 +142,4 @@ with st.container():
             popup=popup_text
         ).add_to(marker_cluster)
     folium_static(mapa, width=1024, height=600)
+
