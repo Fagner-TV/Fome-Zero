@@ -121,7 +121,7 @@ with st.container():
    fig 
    
    with col2:
-      nivel = df1[df1['Aggregate rating']>2.5]
+      nivel = df1[df1['Aggregate rating']< 2.5]
       cidade_pais = nivel[['Country','City']].groupby(['City','Country']).size().reset_index(name ='Quantidade')
       cidade_pais = cidade_pais.sort_values('Quantidade', ascending = False)
       top5_paises = (cidade_pais.groupby('Country')['Quantidade'].sum().sort_values(ascending=False).head(5).index)
@@ -137,4 +137,5 @@ with st.container():
       cidade_pais_top5 = restaurante[restaurante['Country'].isin(top5_paises)]
       restaurante_top10 =cidade_pais_top5.sort_values('Quantidade', ascending=False).head(10)
       fig = px.bar(restaurante_top10,x = 'City', y = 'Quantidade',color = 'Country',title= 'Top 10 Cidade mais restaurantes com culinária distinta', color_discrete_sequence = px.colors.qualitative.Bold,text_auto = True)
+
       fig           
