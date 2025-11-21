@@ -59,36 +59,55 @@ O CEO Guerra também foi recém contratado e precisa entender melhor o negócio 
 
 # 2.	Premissas assumidas para análises:
 A.	Markeplace de restaurantes foi o modelo de negócio.
+
 B.	As 3 visões escolhidas foram: Visão pedidos, Visão Culinárias e Visão Cidades. 
 
 # 3.Estratégia da solução:
 O painel estratégico foi desenvolvido utilizando as métricas que refletem as 3 principais visões do modelo de negócio da empresa:
+
 A.	Visão Países 
+
 B.	Visão Culinárias 
+
 C.	Visão Cidades
 
 # Cada visão é representada pelo seguinte conjunto de métricas.
 # 1.	Visão Países
+
 A.	Quantidade de restaurantes registrado por países.
+
 B.	Quantidade de cidades registradas por país.
+
 C.	Média de avaliações feitas por país.
+
 D.	Média de preço de um prato para duas pessoas por país.
 
 # 2. Visão Culinária
+
 A. Melhores restaurantes por tipo de culinárias.
+
 B. Top 10 restaurantes com melhor avaliação
+
 c. Top 10 melhores culinárias, filtrando por país e culinária
+
 d. Top 10 piores culinárias, filtrando por país e culinária
 
 # 3. Visão Cidades
+
 A. Top 10 de cidades com restaurantes
+
 B. Top 7 de restaurantes com a média acima de 4.0
+
 C. Top de restaurantes com a média abaixo de 2.5
+
 D. Top 10 cidades mais restaurantes com culinárias distintas 
 
 # 4. Top 3 insights de dados
+
 A. Os países que possuem a maior quantidade de restaurantes, possuem também a maioria de restaurantes por cidade e melhor avaliado. 
+
 B. E os top 10 de restaurantes possuem um média de valor baixo de parto para duas pessoas. 
+
 C. Podemos verificar que possuem uma variedade de 165 culinárias cadastradas na base de dados.
 
 # 5. Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet. O painel pode ser acessado através desse link: https://fome-zero-dash.streamlit.app/
@@ -98,8 +117,11 @@ O objetivo desse projeto é criar um conjunto de gráficos e/ou tabelas que exib
 Da visão da Empresa, podemos concluir que o número de restaurantes cadastrados na base de dados é bem grande, temos uma grande variedade de culinárias e podemos avaliar onde estão os melhores restaurantes avaliados e como os piores, por região, cidade e país.   
 
 # 7. Próximo passos 
+
 A. Reduzir o número de métricas. 
+
 B. Criar novos filtros. 
+
 C. Adicionar novas visões de negócio.
 
 
