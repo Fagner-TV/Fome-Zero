@@ -9,7 +9,8 @@ O CEO Guerra também foi recém contratado e precisa entender melhor o negócio 
 3. Quantas cidades únicas estão registradas?
 4. Qual o total de avaliações feitas? 
 5. Qual o total de tipos de culinária registrados? 
-# Pais 
+
+# País 
 1. Qual o nome do país que possui mais cidades registradas?
 2. Qual o nome do país que possui mais restaurantes registrados? 
 3. Qual o nome do país que possui mais restaurantes com o nível de preço igual a 4 registrados? 
